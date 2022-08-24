@@ -1,12 +1,12 @@
 <?php 
-function getYear($jumlah)
+function getVillager($count)
 {
     $intA = 0;
     $intB = 1;
 
     $hasil = $intB;
 
-    for($i = 0; $i<$jumlah - 1; $i++)
+    for($i = 0; $i<$count - 1; $i++)
     {
         $output = ($intA + $intB) + 1;
         $hasil = $hasil." $output";
@@ -24,7 +24,7 @@ function witchFibonacci($yearOfDeath, $ageOfDeath)
 
     for ($i=1; $i < $hasil+1 ; $i++) { 
         //echo $i;
-        echo getYear($i);
+        echo getVillager($i);
         echo "<br>";
     }
 }
